@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import buscar_cep as cep
 
 # ------------------------------------------------------------
 # Buscador de CEP — Frontend (somente estrutura)
@@ -56,7 +57,7 @@ with tab_buscar:
     with st.form("form_buscar_cep", clear_on_submit=False):
         col1, col2 = st.columns([3, 1])
         with col1:
-            cep = st.text_input(
+           numero_cep = st.text_input(
                 "CEP",
                 placeholder="Ex.: 01234567",
                 max_chars=9,  # permite inserir com ou sem máscara; validação ficará na lógica
