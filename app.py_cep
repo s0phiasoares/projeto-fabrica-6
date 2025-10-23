@@ -1,4 +1,4 @@
-import streamlit
+import streamlit as st
 import buscador_de_cep as cep 
 
 #titulo da aplicacação
