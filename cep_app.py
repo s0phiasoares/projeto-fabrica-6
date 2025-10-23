@@ -3,7 +3,7 @@ import buscar_cep as cep
 
 
 ## TÍTULO DA APLICAÇÃO
-st.title("CR CEP 🗺️7️⃣")
+st.title("CR CEP 📦")
 
 
 ## LISTA DE OPÇÕES
@@ -17,7 +17,7 @@ escolha = st.sidebar.selectbox("Escolha uma opção:", opcoes)
 
 
 ## LÓGICA DAS OPÇÕES
-if escolha == "Buscar CEP 🔎":
+if escolha == "Buscar CEP":
     st.image("./CR7_busca_cep.png", width=500)
     numero_cep = st.text_input("Digite o CEP que deseja buscar (apenas números):")
     
